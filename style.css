@@ -52,14 +52,14 @@ ul {
 li:not(:first-child) {
   margin-top: 0.8em;
 }
-ul li a {
+ul li {
   color: #a7a7a7;
   text-decoration: none;
 }
-ul li a:hover {
+ul li{
   color: #2a8ded;
 }
-.about p {
+.about{
   text-align: justify;
   line-height: 2;
   margin: 0;
@@ -83,7 +83,7 @@ div.social {
   flex-direction: row;
   margin-top: 0.5em;
 }
-.social i {
+.social  {
   color: #bac6d9;
 }
 
@@ -96,16 +96,16 @@ div.social {
     margin-top: 10px;
 }
 
-.footer-menu a{
+.footer-menu {
   color: #cfd2d6;
   padding: 6px;
 
   text-decoration: none;
 }
-.footer-menu a:hover{
+.footer-menu{
   color: #27bcda;
 }
-.copyright p {
+.copyright {
   font-size: 0.9em;
   text-align: right;
 }
