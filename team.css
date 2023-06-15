@@ -8,12 +8,6 @@
   font-family: 'Poppins', sans-serif;
 }
 
-body{
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #f2f2f2;
 
 section{
   position: relative;  
