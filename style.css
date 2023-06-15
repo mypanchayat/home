@@ -89,7 +89,7 @@ footer hr {
 
 
 .wrapper{
-  width: 400px;
+  width: 100%;
   background: #fff;
   border-radius: 7px;
   box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.05);
