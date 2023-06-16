@@ -11,7 +11,7 @@
 }
 
 div#slider { overflow: hidden; }
-div#slider figure img { width: 20%; float: left; }
+div#slider figure img video{ width: 20%; float: left; }
 div#slider figure { 
   position: relative;
   width: 500%;
