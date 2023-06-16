@@ -32,13 +32,13 @@ margin-top:70px;
 /* Google Fonts - Poppins */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
-body{
-  
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #EFEFEF;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
+
 
 .slide-container{
   max-width: 1120px;
