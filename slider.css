@@ -24,3 +24,62 @@ div#slider figure {
 #slider{
 margin-top:70px;
 }
+
+
+
+
+
+
+
+
+
+/* Center align the slider */
+.slidercard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Style the profile cards */
+.profile-card {
+  width: 300px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  opacity: 0.7;
+}
+
+.profile-card.active {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+/* Style the card header */
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.card-header h2 {
+  font-size: 18px;
+}
+
+.close-icon {
+  cursor: pointer;
+}
+
+/* Style the card content */
+.card-content p {
+  font-size: 14px;
+}
+
+/* Hide close icon for inactive cards */
+.profile-card:not(.active) .close-icon {
+  display: none;
+}
+
+
