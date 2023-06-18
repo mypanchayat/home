@@ -26,14 +26,14 @@ box-sizing: border-box;
   font-size: 1.31em;
   font-weight: 500;
   color: #43AFFC;
-  padding: 16px 15px;
+  
   align-items: center;
   border-bottom: 1px solid #ccc;
 }
 header i{
   font-size: 0em;
   cursor: pointer;
-  margin-right: 8px;
+  
 }
 .wrapper.active header i{
   margin-left: 5px;
