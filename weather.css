@@ -13,7 +13,7 @@ box-sizing: border-box;
 }
 ::selection{
   color: #fff;
-  background: #43AFFC;
+  
 }
 .wrapper{
   width: 400px;
