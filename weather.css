@@ -1,25 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
+#whtr{
+
+box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-size: 16px;
+  background: #43AFFC;
+}
 ::selection{
   color: #fff;
   background: #43AFFC;
 }
 .wrapper{
-
-display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
-  width: 100%;
+  width: 400px;
   background: #fff;
   border-radius: 7px;
   box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.05);
 }
 .wrapper header{
   display: flex;
-  font-size: 21px;
+  font-size: 1.31em;
   font-weight: 500;
   color: #43AFFC;
   padding: 16px 15px;
@@ -33,7 +37,7 @@ header i{
 }
 .wrapper.active header i{
   margin-left: 5px;
-  font-size: 30px;
+  font-size: 1.45em;
 }
 .wrapper .input-part{
   margin: 20px 25px 30px;
@@ -43,7 +47,7 @@ header i{
 }
 .input-part .info-txt{
   display: none;
-  font-size: 17px;
+  font-size: 1.06em;
   text-align: center;
   padding: 12px 10px;
   border-radius: 7px;
@@ -66,7 +70,7 @@ header i{
   height: 55px;
   border: none;
   outline: none;
-  font-size: 18px;
+  font-size: 1.12em;
   border-radius: 7px;
 }
 .input-part input{
@@ -85,7 +89,6 @@ header i{
   width: 100%;
   margin: 25px 0;
   background: #ccc;
-  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -93,7 +96,7 @@ header i{
 .separator::before{
   content: "or";
   color: #b3b3b3;
-  font-size: 19px;
+  font-size: 1.18em;
   padding: 0 15px;
   background: #fff;
 }
@@ -123,13 +126,13 @@ header i{
 .weather-part .temp{
   display: flex;
   font-weight: 500;
-  font-size: 72px;
+  font-size: 4.5em;
 }
 .weather-part .temp .numb{
   font-weight: 600;
 }
 .weather-part .temp .deg{
-  font-size: 40px;
+  font-size: 0.55em;
   display: block;
   margin: 10px 5px 0 0;
 }
@@ -148,7 +151,7 @@ header i{
 }
 .location i{
   font-size: 22px;
-  margin: 4px 5px 0 0;
+  margin: 3px 5px 0 0;
 }
 .weather-part .bottom-details{
   display: flex;
@@ -165,7 +168,7 @@ header i{
 }
 .column i{
   color: #5DBBFF;
-  font-size: 40px;
+  font-size: 2.5em;
 }
 .column.humidity{
   border-left: 1px solid #ccc;
@@ -174,19 +177,55 @@ header i{
   margin-left: 3px;
 }
 .details .temp, .humidity span{
-  font-size: 18px;
+  font-size: 1.12em;
   font-weight: 500;
   margin-top: -3px;
 }
 .details .temp .deg{
   margin: 0;
-  font-size: 17px;
+  font-size: 0.95em;
   padding: 0 2px 0 1px;
 }
 .column .details p{
-  font-size: 14px;
+  font-size: 0.87em;
   margin-top: -6px;
 }
 .humidity i{
-  font-size: 37px;
+  font-size: 2.37em;
+}
+
+@media (max-width: 500px){
+  body{
+    padding: 0 10px;
+    font-size: 14px;
+  }
+  .wrapper {
+    width: 330px;
+  }
+  .wrapper header{
+    font-size: 1.4em;
+    padding: 14px 20px;
+  }
+  .input-part :where(input, button){
+    height: 52px;
+    font-size: 1.06em;
+  }
+  .input-part .separator{
+    margin: 23px 0;
+  }
+  .separator::before{
+    padding: 0 12px;
+  }
+  .input-part :where(input, button){
+    font-size: 1.28em;
+  }
+  .weather-part img{
+    max-width: 118px;
+  }
+  .weather-part .location{
+    margin-bottom: 25px;
+  }
+  .bottom-details .column{
+    padding: 12px 0;
+  }
 }
