@@ -103,7 +103,7 @@ header i{
 .input-part button{
   color: #fff;
   cursor: pointer;
-  background: #43AFFC;
+  background: #184ee1;
   transition: 0.3s ease;
 }
 .input-part button:hover{
