@@ -680,8 +680,7 @@
 	
 	
 	
-<button id="installApp">Install</button>	
-	
+
 	
 
  
@@ -766,6 +765,9 @@ Near Middle School Patsa <br>
 <script src="https://kit.fontawesome.com/66aa7c98b3.js"
       crossorigin="anonymous"
     ></script>
+<script src="https://kit.fontawesome.com/d661fc1060.js"
+      crossorigin="anonymous"
+    ></script>
 
 <script src="script.js"></script>
 
@@ -805,21 +807,4 @@ s0.parentNode.insertBefore(s1,s0);
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script>
 <!--End of Tawk.to Script-->
-<script>
-let deferredPrompt;
-    window.addEventListener('beforeinstallprompt', (e) => {
-        deferredPrompt = e;
-    });
-
-    const installApp = document.getElementById('installApp');
-    installApp.addEventListener('click', async () => {
-        if (deferredPrompt !== null) {
-            deferredPrompt.prompt();
-            const { outcome } = await deferredPrompt.userChoice;
-            if (outcome === 'accepted') {
-                deferredPrompt = null;
-            }
-        }
-    });
-</script>
 </html>
