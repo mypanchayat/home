@@ -1,0 +1,733 @@
+<!DOCTYPE html>  
+
+  <html lang="en">  
+
+  <head>  
+
+      <meta charset="UTF-8">  
+
+  
+
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+
+  
+
+      <!-- ===== CSS ===== -->  
+
+      <link rel="stylesheet" href="style.css">  
+
+    <link rel="stylesheet" href="svrbtn.css">  
+
+  
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css">  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+      <!-- Favicon -->  
+
+      <link rel="icon" href="https://i.ibb.co/1fQfpjG/logo.jpg" type="image/jpg">  
+
+  
+
+  
+
+      <!-- Open Graph meta tags for social media sharing -->  
+
+      <meta property="og:title" content="Railway Ticket Booking | My Panchayat - Connecting Communities">  
+
+      <meta property="og:description" content="My Panchayat is a community-focused website that brings local government and citizens together.">  
+
+      <meta property="og:image" content="https://i.ibb.co/1fQfpjG/logo.jpg">  
+
+      <meta property="og:url" content="https://mypanchayat.github.io/aura">  
+
+      <meta property="og:type" content="website">  
+
+  
+
+      <!-- Twitter Card meta tags for social media sharing -->  
+
+      <meta name="twitter:card" content="summary_large_image">  
+
+      <meta name="twitter:title" content="My Panchayat - Connecting Communities">  
+
+      <meta name="twitter:description" content="My Panchayat is a community-focused website that brings local government and citizens together.">  
+
+      <meta name="twitter:image" content="https://i.ibb.co/1fQfpjG/logo.jpg">  
+
+  
+
+  
+
+  <!-- Google tag (gtag.js) -->  
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-TM8RSCW1E8"></script>  
+
+  <script>  
+
+    window.dataLayer = window.dataLayer || [];  
+
+    function gtag(){dataLayer.push(arguments);}  
+
+    gtag('js', new Date());  
+
+  
+
+    gtag('config', 'G-TM8RSCW1E8');  
+
+  </script>  
+
+  
+
+  
+
+   <!-- ===== Link Swiper's CSS ===== -->  
+
+      <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>  
+
+  
+
+      <!-- ===== Fontawesome CDN Link ===== -->  
+
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>  
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">  
+
+  
+
+  
+
+  
+
+   <link rel="stylesheet" href="weather.css">  
+
+  
+
+  
+
+  <link rel="stylesheet" href="slider.css">          
+
+      <!-- ===== Boxicons CSS ===== -->  
+
+      <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>  
+
+  
+
+       <meta http-equiv="X-UA-Compatible" content="ie=edge">  
+
+      <meta name="description" content="My Panchayat - Connecting Communities">  
+
+      <meta name="keywords" content="My Panchayat, community, website, local, government">  
+
+      <meta name="author" content="Keshav Mishra">  
+
+      <title>Hotel Booking | My Panchayat - Connecting Communities</title>  
+
+   </head>  
+
+  <body>  
+
+      <nav>  
+
+          <div class="nav-bar">  
+
+              <i class='bx bx-menu sidebarOpen' ></i>  
+
+              <span class="logo navLogo"><a href="#" style="font-size:20px">My Panchayat</a></span>  
+
+  
+
+              <div class="menu">  
+
+                  <div class="logo-toggle">  
+
+                      <span class="logo"><a href="#">My Panchayat</a></span>  
+
+                      <i class='bx bx-x siderbarClose'></i>  
+
+                  </div>  
+
+  
+
+                  <ul class="nav-links">  
+
+                      <li><a href="https://mypanchayat.github.io/aura">Home</a></li>  
+
+                      <li><a href="#">About</a></li>  
+
+                      <li><a href="#">Portfolio</a></li>  
+
+                      <li><a href="#">Services</a></li>  
+
+                      <li><a href="#">Contact</a></li>  
+
+  
+
+  
+
+  <li id="google_translate_element"></li>  
+
+  
+
+  
+
+  
+
+                  </ul>  
+
+              </div>  
+
+  
+
+              <div class="darkLight-searchBox">  
+
+                  <div class="dark-light">  
+
+                      <i class='bx bx-moon moon'></i>  
+
+                      <i class='bx bx-sun sun'></i>  
+
+                  </div>  
+
+  
+
+                  <div class="searchBox">  
+
+                     <div class="searchToggle">  
+
+                      <i class='bx bx-x cancel'></i>  
+
+                      <i class='bx bx-search search'></i>  
+
+                     </div>  
+
+  
+
+                      <div class="search-field">  
+
+                          <input type="text" placeholder="Search...">  
+
+                          <i class='bx bx-search'></i>  
+
+                      </div>  
+
+                  </div>  
+
+              </div>  
+
+          </div>  
+
+      </nav>  
+
+  
+
+  
+
+  
+
+   <style> 
+
+ .votefrm{ 
+
+  
+
+ background-color:#f8e8ee; 
+
+ margin:5px; 
+
+ padding:5px; 
+
+ border-radius:5px; 
+
+ font-size:24px; 
+
+ width:100%; 
+
+ padding-bottom:50px; 
+
+ } 
+
+  .answ{ 
+
+ background-color:#ffff; 
+
+ color:#184ee1; 
+
+ width:100%; 
+
+ height:40px; 
+
+ border:0; 
+
+ border-radius:5px; 
+
+ transition:0.5s; 
+
+ } 
+
+ .btnv{ 
+
+ background-color:#f8e8ee; 
+
+ color:#184ee1; 
+
+ width:50%; 
+
+ height:40px; 
+
+ border:0; 
+
+ border-radius:5px; 
+
+ transition:0.5s; 
+
+ margin:10px; 
+
+  
+
+ } 
+
+ .vtq{ 
+
+ border-bottom:2px solid white; 
+
+ } 
+
+   </style> 
+
+  
+
+  
+
+  </head>  
+
+  <body>  
+
+  
+
+  
+
+  <div id="sliderad" style="margin-top:70px;">  
+
+  
+
+  
+
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">  
+
+    <div class="carousel-indicators">  
+
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>  
+
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>  
+
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>  
+
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>  
+
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>  
+
+    </div>  
+
+  
+
+    <div class="carousel-inner">  
+
+      <div class="carousel-item active">  
+
+        <img src="https://asset22.ckassets.com/resources/image/staticpage_images/Deal-20%20(1)-1685698297.png" class="d-block w-100" alt>  
+
+      </div>  
+
+      <div class="carousel-item">  
+
+        <img class="d-block w-100"  src="https://asset22.ckassets.com/resources/image/staticpage_images/Finance-Deal-1680591727.png" alt>  
+
+      </div>  
+
+      <div class="carousel-item">  
+
+       <img class="d-block w-100" src="https://asset22.ckassets.com/resources/image/staticpage_images/Deal-3-1672727089.png" alt>  
+
+      </div>  
+
+  
+
+            <div class="carousel-item">  
+
+     <img class="d-block w-100" src="https://asset22.ckassets.com/resources/image/staticpage_images/Adani%20One-17-02-23-EK-DC-1676636581.jpg" alt>  
+
+            </div>  
+
+            <div class="carousel-item">  
+
+  <img class="d-block w-100" src="https://asset22.ckassets.com/resources/image/staticpage_images/Flipkart-22-02-23-EK-DC-1677046201.jpg" alt>  
+
+  
+
+            </div>  
+
+    </div>  
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">  
+
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>  
+
+      <span class="visually-hidden">Previous</span>  
+
+    </button>  
+
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">  
+
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>  
+
+      <span class="visually-hidden">Next</span>  
+
+    </button>  
+
+  </div>  
+
+  
+
+  </div>  
+
+  
+
+  <br>  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+ <div class="votefrm"> 
+
+ <div class="votel"> 
+
+ <p class="vtq">Train Tickets</p><br> 
+
+  
+
+  
+
+  <div class="form-group row"> 
+
+     <label for="colFormLabel" class="col-sm-2 col-form-label">Train No.</label> 
+
+     <div class="col-sm-10"> 
+
+       <input type="tel" class="form-control" id="colFormLabel" placeholder="Enter Train No." required> 
+
+     </div> 
+
+   </div> 
+
+   <div class="form-group row"> 
+
+     <label for="colFormLabel" class="col-sm-2 col-form-label">Travel Date</label> 
+
+     <div class="col-sm-10"> 
+
+       <input type="date" class="form-control" id="colFormLabel" placeholder="select Date to travel" required> 
+
+     </div> 
+
+   </div> 
+
+   <div class="form-group row"> 
+
+     <label for="colFormLabel" class="col-sm-2 col-form-label">Mobile No.</label> 
+
+     <div class="col-sm-10"> 
+
+       <input type="tel" class="form-control" id="colFormLabel" placeholder="Enter Mobile No." required> 
+
+     </div> 
+
+   </div> 
+
+  
+
+   </div> 
+
+ <br> 
+
+  
+
+ </div> 
+
+ </div> 
+
+  
+
+  
+
+  
+
+ <center> 
+
+ <button class="btnv" onclick="showAlert()">Submit Request</button> 
+
+ </center>   
+
+      <script> 
+
+         function showAlert() { 
+
+             alert("प्रिय उपयोगकर्ता,\n\nध्यान दें! आपका जमा किया गया फॉर्म प्रक्रिया में है और हम आपके विवरणों की पुष्टि करने के लिए आपको वापस कॉल करेंगे। आपके पंजीकृत WhatsApp नंबर पर टिकट भेजे जाएंगे।\n\nहम इसमें थोड़ा समय लगा सकते हैं और आपके सब्र की आवश्यकता होगी। हम अपनी समयसीमा के भीतर संभावितता सुनिश्चित करने के लिए जल्दी से संपर्क करेंगे।\n\nहमारी टीम आपके आभारी है और इस प्रक्रिया को सुनिश्चित करने के लिए हमारा सर्वोत्तम प्रयास कर रही है। यदि आपके पास कोई अतिरिक्त प्रश्न हों, तो कृपया हमसे संपर्क करें।\n\nधन्यवाद,\nMy Panchayat Team"); 
+
+         } 
+
+     </script>  
+
+  <footer class="footer">  
+
+    <div class="footer__addr">  
+
+      <h1 class="footer__logo">Awansoft Corp.</h1>  
+
+  
+
+      <h2>Contact</h2>  
+
+  
+
+      <address>  
+
+  
+
+  <b>Keshav Mishra</b><br>  
+
+  Patsa, Aura, Hasanpur, Samastipur, Bihar <br>  
+
+  Near Middle School Patsa <br>  
+
+  848206  
+
+  
+
+        <a class="footer__btn" href="mailto:info.mypanchayat@gmail.com"><li class ="bx bx-envelope"> Email Us </li>  </a>  
+
+  
+
+    <a class="footer__btn" href="tel:+919939521920"><li class ="bx bx-phone"> Call us</li></a>  
+
+      </address>  
+
+    </div>  
+
+  
+
+    <ul class="footer__nav">  
+
+      <li class="nav__item">  
+
+        <h2 class="nav__title">Quick Links</h2>  
+
+  
+
+        <ul class="nav__ul">  
+
+          <li>  
+
+            <a href="#">Online</a>  
+
+          </li>  
+
+  
+
+          <li>  
+
+            <a href="#">Print</a>  
+
+          </li>  
+
+  
+
+          <li>  
+
+            <a href="#">Alternative Ads</a>  
+
+          </li>  
+
+        </ul>  
+
+      </li>  
+
+         <li class="nav__item">   
+
+         <h2 class="nav__title">Follow us:</h2>   
+
+  
+
+         <ul class="nav__ul">   
+
+          <a href="https://instagram.com/mkeshav344">  
+
+   <li class="fab fa-instagram">   
+
+            Instagram </li> </a>  
+
+  <br>  
+
+  
+
+     <a href="https://twitter.com/Expertkmishra">  
+
+   <li class="fab fa-twitter">   
+
+            Twitter </li> </a>  
+
+  
+
+  
+
+  <br>  
+
+  
+
+  <a href="https://www.youtube.com/@evcrowntech7904">  
+
+   <li class="fab fa-youtube">   
+
+            YouTube </li> </a>  
+
+  
+
+  
+
+  <br>  
+
+     <a href="https://gostore.app/redbasket/login">  
+
+   <li class="fab fa-opera">   
+
+            Website </li> </a>  
+
+  
+
+        </ul>  
+
+      </li>  
+
+    </ul>  
+
+  
+
+    <div class="legal">  
+
+      <p>&copy; 2022 Awansoft Corp. All rights reserved.</p>  
+
+  
+
+      <div class="legal__links">  
+
+        <span>Made with <span class="heart">♥</span> from Keshav Mishra</span>  
+
+      </div>  
+
+    </div>  
+
+  </footer>  
+
+   <script src="https://kit.fontawesome.com/66aa7c98b3.js"  
+
+        crossorigin="anonymous"  
+
+      ></script>  
+
+  <script src="https://kit.fontawesome.com/d661fc1060.js"  
+
+        crossorigin="anonymous"  
+
+      ></script>  
+
+  
+
+  <script src="script.js"></script>  
+
+  
+
+   <!-- Swiper JS -->  
+
+        <script src="js/swiper-bundle.min.js"></script>  
+
+  
+
+  
+
+ <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1818044143478927" 
+
+      crossorigin="anonymous"></script> 
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>  
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>  
+
+  
+
+  
+
+  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>  
+
+  
+
+  
+
+  </body>  
+
+  <script type="text/javascript">  
+
+  function googleTranslateElementInit() {  
+
+    new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL}, 'google_translate_element');  
+
+  }  
+
+  </script>  
+
+  <!--Start of Tawk.to Script-->  
+
+  <script type="text/javascript">  
+
+  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();  
+
+  (function(){  
+
+  var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];  
+
+  s1.async=true;  
+
+  s1.src='https://embed.tawk.to/648ca18594cf5d49dc5e2940/1h32ldt3u';  
+
+  s1.charset='UTF-8';  
+
+  s1.setAttribute('crossorigin','*');  
+
+  s0.parentNode.insertBefore(s1,s0);  
+
+  })();  
+
+  </script>  
+
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>  
+
+          <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script>  
+
+  <!--End of Tawk.to Script-->  
+
+  </html>
