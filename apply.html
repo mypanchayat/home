@@ -234,17 +234,22 @@
   
   
    <div class="form-group row">  
-      <label for="colFormLabel" class="col-sm-2 col-form-label">Flight No.</label>  
+      <label for="colFormLabel" class="col-sm-2 col-form-label">Name:</label>  
       <div class="col-sm-10">  
-        <input type="tel" class="form-control" id="colFormLabel" placeholder="Enter Flight No." required>  
+        <input type="text" class="form-control" id="colFormLabel" placeholder="Enter Name." required>  
       </div>  
     </div>  
+<!--
     <div class="form-group row">  
       <label for="colFormLabel" class="col-sm-2 col-form-label">Travel Date</label>  
       <div class="col-sm-10">  
         <input type="date" class="form-control" id="colFormLabel" placeholder="select Date to travel" required>  
       </div>  
-    </div>  
+    </div> -->  
+
+
+
+
     <div class="form-group row">  
       <label for="colFormLabel" class="col-sm-2 col-form-label">Mobile No.</label>  
       <div class="col-sm-10">  
@@ -358,13 +363,13 @@
 
     <div class="wrapper">
       <div class="select-btn">
-        <span>Select Country</span>
+        <span>Select Document</span>
         <i class="uil uil-angle-down"></i>
       </div>
       <div class="content">
         <div class="search">
           <i class="uil uil-search"></i>
-          <input spellcheck="false" type="text" placeholder="Search">
+          <input spellcheck="false" type="text" placeholder="Search For Documents.">
         </div>
         <ul class="options"></ul>
       </div>
@@ -376,7 +381,7 @@ selectBtn = wrapper.querySelector(".select-btn"),
 searchInp = wrapper.querySelector("input"),
 options = wrapper.querySelector(".options");
 
-let countries = ["Afghanistan", "Algeria", "Argentina", "Australia", "Bangladesh", "Belgium", "Bhutan",
+let countries = ["PVC Aadhar Card", "Pan Card (Minor)", "Pan card (18+)", "Voter Id", "E-Shram Card", "", "Bhutan",
                  "Brazil", "Canada", "China", "Denmark", "Ethiopia", "Finland", "France", "Germany",
                  "Hungary", "Iceland", "India", "Indonesia", "Iran", "Italy", "Japan", "Malaysia",
                  "Maldives", "Mexico", "Morocco", "Nepal", "Netherlands", "Nigeria", "Norway", "Pakistan",
